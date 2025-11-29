@@ -1217,7 +1217,7 @@ html,
 } */
 
 /* Scaling */
-@media only screen and (max-height: 767px) and (orientation: landscape) {
+/* @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-desktop #slides-container {
         height: 50% !important;
     }
@@ -1233,7 +1233,7 @@ html,
     .layout-desktop #slides-container .button-container {
         top: calc(50% + 15vh) !important;
     }
-}
+} */
 
 /* MY CUSTOM CSS, MY CODE, MY CSS */
 
