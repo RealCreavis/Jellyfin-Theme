@@ -597,8 +597,7 @@ html,
 #skipIntro .paper-icon-button-light:hover:not(:disabled) {
     color: #FFF !important;
 }
-/* MY CODE */
-/* .sliderContainer:has(.mdl-slider-hoverthumb:not(:hover)) .sliderMarker {
+.sliderContainer:has(.mdl-slider-hoverthumb:not(:hover)) .sliderMarker {
     opacity: 0 !important;
     transition: 0.2s !important;
 }
@@ -612,7 +611,7 @@ html,
 .sliderMarker.watched {
     background-color: #FFFFFF90 !important;
     z-index: 10 !important;
-} */
+}
 #skipIntro .upNextContainer {
     padding: 0px !important;
 }
@@ -1197,11 +1196,11 @@ html,
 /* Plugin support */
 
 /* Media Bar */
-/* .layout-desktop #slides-container {
+.layout-desktop #slides-container {
     margin: 125px 50px 0 300px !important;
     width: auto !important;
     border-radius: var(--rounded-cards) !important;
-    height: 58% !important;
+    height: 100% !important;
 }
 .layout-desktop #slides-container .backdrop-container,
 .layout-desktop #slides-container .backdrop-overlay,
@@ -1215,12 +1214,12 @@ html,
 }
 .layout-desktop #slides-container .logo-container {
     top: 8vh !important;
-} */
+}
 
 /* Scaling */
-/* @media only screen and (max-height: 767px) and (orientation: landscape) {
+@media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-desktop #slides-container {
-        height: 50% !important;
+        height: 100% !important;
     }
     .layout-desktop #slides-container .logo-container {
         top: 10% !important;
@@ -1234,7 +1233,7 @@ html,
     .layout-desktop #slides-container .button-container {
         top: calc(50% + 15vh) !important;
     }
-} */
+}
 
 /* MY CUSTOM CSS, MY CODE, MY CSS */
 
