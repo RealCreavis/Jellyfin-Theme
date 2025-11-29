@@ -6,15 +6,16 @@
                        COLOR VARIABLES
 ========================================================= */
 :root {
+:root {
+    /* Colors */
     --color-white: #ffffff !important;
 
-    /* Subtle, warm red framing */
     --color-card-outline1: #b83a3a !important;
     --color-card-outline2: #d44c4c !important;
 
     --color-overlay-bg: rgba(0, 0, 0, 0.45) !important;
 
-    /* Primary – Netflix-inspired but softer */
+    /* Primary – Netflix-inspired */
     --jf-palette-primary-main: #c73232 !important;
     --jf-palette-primary-light: #e04a4a !important;
     --jf-palette-primary-dark: #9f2626 !important;
@@ -25,7 +26,7 @@
     --jf-palette-primary-darkChannel: 159 38 38 !important;
     --jf-palette-primary-contrastTextChannel: 255 255 255 !important;
 
-    /* Secondary – deeper, more relaxed red */
+    /* Secondary */
     --jf-palette-secondary-main: #a62828 !important;
     --jf-palette-secondary-light: #c23b3b !important;
     --jf-palette-secondary-dark: #7f1c1c !important;
@@ -45,7 +46,6 @@
     --jf-palette-action-active: #ffffff !important;
     --jf-palette-action-hover: rgba(255, 255, 255, 0.06) !important;
     --jf-palette-action-hoverOpacity: 0.06 !important;
-
     --jf-palette-action-selected: rgba(255, 255, 255, 0.14) !important;
     --jf-palette-action-disabled: rgba(255, 255, 255, 0.3) !important;
     --jf-palette-action-disabledBackground: rgba(255, 255, 255, 0.1) !important;
@@ -53,7 +53,7 @@
     /* Stars */
     --jf-palette-starIcon-main: #f2b01e !important;
 
-    /* Error – same family, darker variant */
+    /* Error */
     --jf-palette-error-main: #8f1f1f !important;
     --jf-palette-error-light: #b52f2f !important;
     --jf-palette-error-dark: #6b1515 !important;
@@ -73,6 +73,25 @@
     --primary-r: 199 !important;
     --primary-g: 50 !important;
     --primary-b: 50 !important;
+
+    /* General UI enhancements (from commented block) */
+    --primary-accent-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 1.0);
+    --secondary-accent-color: #00a4dc20;
+
+    --primary-background-color: #101010;
+    --secondary-background-color: #181818;
+    --primary-background-transparent: rgba(35,35,35,0.5);
+    --secondary-background-transparent: rgba(0,0,0,0.6);
+    --tertiary-background-transparent: rgba(35,35,35,0.85);
+
+    --rounded-cards: 15px;
+    --blur: 10px;
+
+    --primary-alt1: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 1);
+    --primary-alt2: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.85);
+    --primary-alt3: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.7);
+    --primary-alt4: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.55);
+    --primary-alt5: rgba(calc(var(--primary-r) - 30), calc(var(--primary-g) - 30), calc(var(--primary-b) - 30), 0.4);
 }
 
 
