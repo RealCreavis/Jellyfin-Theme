@@ -2,8 +2,7 @@
 
 /* @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/scyfin-theme.css'); */
 
-/* SEPERATOR */
-@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css'); !important
+/* @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css'); -- ADD THIS AFTER IMPORTING THIS */
 
 /* =========================================================
                        COLOR VARIABLES
