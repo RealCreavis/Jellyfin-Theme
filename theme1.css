@@ -2,9 +2,6 @@
 
 /* @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/scyfin-theme.css'); */
 
-/* SEPERATOR */
-@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css');
-
 /* =========================================================
                        COLOR VARIABLES
 ========================================================= */
@@ -77,6 +74,7 @@
     --primary-g: 50 !important;
     --primary-b: 50 !important;
 }
+
 
 /* Variables */
 /* :root {
@@ -1172,6 +1170,11 @@ html,
     background: var(--primary-background-transparent) !important;
     backdrop-filter: blur(var(--blur)) !important;
 }
+
+/* MY CUSTOM CSS */
+
+/* SEPERATOR */
+@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css');
 
 /* Focus Ring */
 *:focus-visible {
