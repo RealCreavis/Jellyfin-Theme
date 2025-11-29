@@ -1197,10 +1197,10 @@ html,
 
 /* Media Bar */
 .layout-desktop #slides-container {
-    margin: 125px 50px 0 300px !important;
+    /* margin: 125px 50px 0 300px !important;
     width: auto !important;
     border-radius: var(--rounded-cards) !important;
-    height: 100% !important;
+    height: 100% !important; */
 }
 .layout-desktop #slides-container .backdrop-container,
 .layout-desktop #slides-container .backdrop-overlay,
