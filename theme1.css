@@ -1193,47 +1193,87 @@ html,
 
 
 
-/* Plugin support */
-
-/* Media Bar */
+/* ===============================
+   Media Bar / Hero Slide Styling
+=============================== */
 .layout-desktop #slides-container {
-    /* margin: 125px 50px 0 300px !important;
-    width: auto !important;
-    border-radius: var(--rounded-cards) !important;
-    height: 100% !important; */
+    position: relative !important;
+    margin: 0 auto !important;
+    width: 90vw !important;               /* responsive width */
+    max-width: 1600px !important;         /* limit stretching */
+    height: 55vh !important;              /* Netflix-style hero height */
+    border-radius: var(--rounded-cards, 10px) !important;
+    overflow: hidden !important;
 }
+
+/* Backdrop layers */
 .layout-desktop #slides-container .backdrop-container,
 .layout-desktop #slides-container .backdrop-overlay,
 .layout-desktop #slides-container .backdrop,
 .layout-desktop #slides-container .gradient-overlay {
     mask-image: none !important;
     -webkit-mask-image: none !important;
-}
-.layout-desktop #slides-container .pause-button {
-    top: 1rem !important;
-}
-.layout-desktop #slides-container .logo-container {
-    top: 8vh !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
-/* Scaling */
+/* Pause button */
+.layout-desktop #slides-container .pause-button {
+    top: 1rem !important;
+    right: 1rem !important;
+}
+
+/* Logo placement */
+.layout-desktop #slides-container .logo-container {
+    position: absolute !important;
+    top: 8vh !important;
+    left: 5vw !important;
+}
+
+/* Text & info overlay */
+.layout-desktop #slides-container .info-container {
+    position: absolute !important;
+    bottom: 10vh !important;
+    left: 5vw !important;
+    max-width: 45% !important;
+    color: var(--jf-palette-text-primary, #fff) !important;
+}
+
+/* Genre and button container */
+.layout-desktop #slides-container .genre,
+.layout-desktop #slides-container .button-container {
+    position: absolute !important;
+    left: 5vw !important;
+}
+
+/* Responsive scaling for short/landscape screens */
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-desktop #slides-container {
-        height: 100% !important;
+        height: 70vh !important;
     }
     .layout-desktop #slides-container .logo-container {
-        top: 10% !important;
+        top: 5% !important;
     }
     .layout-desktop #slides-container .info-container {
-        top: calc(50% + -4vh) !important;
+        bottom: 8% !important;
+        max-width: 50% !important;
     }
     .layout-desktop #slides-container .genre {
-        top: calc(50% + 1vh) !important;
+        bottom: 5% !important;
     }
     .layout-desktop #slides-container .button-container {
-        top: calc(50% + 15vh) !important;
+        bottom: 2% !important;
     }
 }
+
+/* Smooth scaling of card images */
+.layout-desktop #slides-container .cardImageContainer {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.layout-desktop #slides-container .card:hover .cardImageContainer {
+    transform: scale(1.05) !important;
+}
+
 
 /* MY CUSTOM CSS, MY CODE, MY CSS */
 
