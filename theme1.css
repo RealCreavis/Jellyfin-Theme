@@ -1194,86 +1194,41 @@ html,
 
 
 /* ===============================
-   Media Bar / Hero Slide Styling
+   Reset Slides Container
 =============================== */
 .layout-desktop #slides-container {
-    position: relative !important;
+    all: unset !important;            /* Remove all inherited styles */
+    position: relative !important;    /* Needed for overlays/absolute children */
+    display: block !important;
+    width: 100% !important;           /* Full width of container */
+    height: 60vh !important;          /* Hero-style height */
     margin: 0 auto !important;
-    width: 90vw !important;               /* responsive width */
-    max-width: 1600px !important;         /* limit stretching */
-    height: 55vh !important;              /* Netflix-style hero height */
-    border-radius: var(--rounded-cards, 10px) !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
     overflow: hidden !important;
+    background: transparent !important;
 }
 
-/* Backdrop layers */
+/* Reset all internal elements inside slides-container */
 .layout-desktop #slides-container .backdrop-container,
 .layout-desktop #slides-container .backdrop-overlay,
 .layout-desktop #slides-container .backdrop,
-.layout-desktop #slides-container .gradient-overlay {
-    mask-image: none !important;
-    -webkit-mask-image: none !important;
+.layout-desktop #slides-container .gradient-overlay,
+.layout-desktop #slides-container .logo-container,
+.layout-desktop #slides-container .info-container,
+.layout-desktop #slides-container .button-container,
+.layout-desktop #slides-container .pause-button,
+.layout-desktop #slides-container .cardImageContainer {
+    all: unset !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
     width: 100% !important;
     height: 100% !important;
+    background: none !important;
+    box-shadow: none !important;
+    transform: none !important;
 }
-
-/* Pause button */
-.layout-desktop #slides-container .pause-button {
-    top: 1rem !important;
-    right: 1rem !important;
-}
-
-/* Logo placement */
-.layout-desktop #slides-container .logo-container {
-    position: absolute !important;
-    top: 8vh !important;
-    left: 5vw !important;
-}
-
-/* Text & info overlay */
-.layout-desktop #slides-container .info-container {
-    position: absolute !important;
-    bottom: 10vh !important;
-    left: 5vw !important;
-    max-width: 45% !important;
-    color: var(--jf-palette-text-primary, #fff) !important;
-}
-
-/* Genre and button container */
-.layout-desktop #slides-container .genre,
-.layout-desktop #slides-container .button-container {
-    position: absolute !important;
-    left: 5vw !important;
-}
-
-/* Responsive scaling for short/landscape screens */
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-desktop #slides-container {
-        height: 70vh !important;
-    }
-    .layout-desktop #slides-container .logo-container {
-        top: 5% !important;
-    }
-    .layout-desktop #slides-container .info-container {
-        bottom: 8% !important;
-        max-width: 50% !important;
-    }
-    .layout-desktop #slides-container .genre {
-        bottom: 5% !important;
-    }
-    .layout-desktop #slides-container .button-container {
-        bottom: 2% !important;
-    }
-}
-
-/* Smooth scaling of card images */
-.layout-desktop #slides-container .cardImageContainer {
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-}
-.layout-desktop #slides-container .card:hover .cardImageContainer {
-    transform: scale(1.05) !important;
-}
-
 
 /* MY CUSTOM CSS, MY CODE, MY CSS */
 
