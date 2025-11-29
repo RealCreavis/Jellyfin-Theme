@@ -2,6 +2,9 @@
 
 /* @import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/scyfin-theme.css'); */
 
+/* SEPERATOR */
+@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css'); !important
+
 /* =========================================================
                        COLOR VARIABLES
 ========================================================= */
@@ -1232,9 +1235,6 @@ html,
     }
 }
 /* MY CUSTOM CSS */
-
-/* SEPERATOR */
-@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css'); !important
 
 /* Focus Ring */
 *:focus-visible {
