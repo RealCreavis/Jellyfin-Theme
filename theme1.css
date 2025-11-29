@@ -597,7 +597,8 @@ html,
 #skipIntro .paper-icon-button-light:hover:not(:disabled) {
     color: #FFF !important;
 }
-.sliderContainer:has(.mdl-slider-hoverthumb:not(:hover)) .sliderMarker {
+/* MY CODE */
+/* .sliderContainer:has(.mdl-slider-hoverthumb:not(:hover)) .sliderMarker {
     opacity: 0 !important;
     transition: 0.2s !important;
 }
@@ -611,7 +612,7 @@ html,
 .sliderMarker.watched {
     background-color: #FFFFFF90 !important;
     z-index: 10 !important;
-}
+} */
 #skipIntro .upNextContainer {
     padding: 0px !important;
 }
