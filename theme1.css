@@ -1234,7 +1234,7 @@ html,
 /* MY CUSTOM CSS */
 
 /* SEPERATOR */
-@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css');
+@import url('https://cdn.jsdelivr.net/gh/loof2736/scyfin@latest/CSS/disable-static-drawer.css'); !important
 
 /* Focus Ring */
 *:focus-visible {
