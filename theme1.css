@@ -1196,7 +1196,7 @@ html,
 /* Plugin support */
 
 /* Media Bar */
-.layout-desktop #slides-container {
+/* .layout-desktop #slides-container {
     margin: 125px 50px 0 300px !important;
     width: auto !important;
     border-radius: var(--rounded-cards) !important;
@@ -1214,7 +1214,8 @@ html,
 }
 .layout-desktop #slides-container .logo-container {
     top: 8vh !important;
-}
+} */
+
 /* Scaling */
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-desktop #slides-container {
@@ -1233,7 +1234,8 @@ html,
         top: calc(50% + 15vh) !important;
     }
 }
-/* MY CUSTOM CSS */
+
+/* MY CUSTOM CSS, MY CODE, MY CSS */
 
 /* Focus Ring */
 *:focus-visible {
