@@ -1194,67 +1194,124 @@ html,
 
 
 #slides-container {
-    all: unset !important;
     width: 100% !important;
-    height: auto !important;
+    height: 600px !important; /* Adjust height for featured carousel */
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-behavior: smooth !important;
+    position: relative !important;
     margin: 0 !important;
     padding: 0 !important;
-    border-radius: 0 !important;
-    overflow: visible !important;
     background: transparent !important;
-    mask-image: none !important;
-    -webkit-mask-image: none !important;
 }
 
-#slides-container .backdrop,
-#slides-container .gradient-overlay,
-#slides-container .backdrop-overlay,
-#slides-container .pause-button,
-#slides-container .logo-container,
-#slides-container .info-container,
-#slides-container .button-container {
-    display: unset !important;
+#slides-container .slide {
+    flex: 0 0 auto !important;
+    width: 300px !important; /* Adjust card width */
+    margin-right: 16px !important;
     position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: none !important;
-    box-shadow: none !important;
-    z-index: 1 !important;
-    opacity: 1 !important;
-}
-
-#slides-container .card {
-    display: inline-block !important;
-    margin: 0 10px !important;
-    border-radius: 0 !important;
+    display: block !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-#slides-container .card:hover {
+#slides-container .slide:hover {
     transform: scale(1.05) !important;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+    z-index: 2 !important;
 }
 
-#slides-container .cardImageContainer img {
+#slides-container .backdrop-container,
+#slides-container .gradient-overlay,
+#slides-container .backdrop-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     object-fit: cover !important;
-    border-radius: 0 !important;
+    z-index: 0 !important;
 }
 
-@media (max-width: 1200px) {
-    #slides-container .card {
-        margin: 0 5px !important;
-        transform: scale(1) !important;
+#slides-container .logo-container {
+    position: absolute !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    z-index: 2 !important;
+}
+
+#slides-container .info-container,
+#slides-container .plot-container,
+#slides-container .button-container,
+#slides-container .genre {
+    position: absolute !important;
+    bottom: 16px !important;
+    left: 16px !important;
+    z-index: 3 !important;
+    color: #fff !important;
+}
+
+#slides-container .dots-container {
+    position: absolute !important;
+    bottom: 10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 5 !important;
+}
+
+#slides-container .arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 10 !important;
+    background: rgba(0,0,0,0.5) !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+
+#slides-container .arrow.left-arrow {
+    left: 10px !important;
+}
+
+#slides-container .arrow.right-arrow {
+    right: 10px !important;
+}
+
+#slides-container .pause-button {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    z-index: 10 !important;
+    background: rgba(0,0,0,0.5) !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+
+@media (max-width: 1024px) {
+    #slides-container {
+        height: 450px !important;
+    }
+    #slides-container .slide {
+        width: 220px !important;
     }
 }
 
 @media (max-width: 768px) {
     #slides-container {
-        padding: 0 5px !important;
+        height: 350px !important;
     }
-    #slides-container .cardImageContainer img {
-        height: auto !important;
+    #slides-container .slide {
+        width: 180px !important;
+        margin-right: 8px !important;
     }
 }
 
